@@ -1,0 +1,12 @@
+public class ProductoTest {
+
+    public static void main(String[] args) {
+        Producto p = new Producto("Martillo", 10, 25000);
+
+        if (p.getNombre().equals("Martillo") && p.getCantidad() == 10) {
+            System.out.println("TEST OK: El producto se creó correctamente");
+        } else {
+            System.out.println("TEST FAIL: Error creando producto");
+        }
+    }
+}
